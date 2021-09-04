@@ -13,6 +13,20 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+}
+
+.icon {
+    font-size: 60px;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0;
+    color: rgb(240, 240, 240);
+}
+
+.icon:hover {
+    display: inline-block;
+    opacity: 1;
 }
 
 .userName {
