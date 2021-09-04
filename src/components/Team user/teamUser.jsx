@@ -5,7 +5,7 @@ export const TeamUser = () => {
     return(
         <div className="teamUser">
             <div className="userImg">
-                
+                <i class="fa fa-trash icon" aria-hidden="true"></i>
             </div>
             <div className="userName">
                 <p>Hero 1</p>
