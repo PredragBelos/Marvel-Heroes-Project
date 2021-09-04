@@ -1,7 +1,6 @@
 import { Redirect, Route } from 'react-router-dom';
 import { Home } from '../Home page/home';
 import './App.css';
-import { Card } from '../Card/card';
 
 function App() {
   return (

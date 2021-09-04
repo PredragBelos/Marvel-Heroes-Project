@@ -1,0 +1,2 @@
+export const basicURL = "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=cd76329de7d7ba0804f6336b3cf9d951&hash=6031c5dc5f3f32bea5aeae2134dec9cb";
+export const caracterURL = "https://gateway.marvel.com/v1/public/characters?ts=1&apikey=cd76329de7d7ba0804f6336b3cf9d951&hash=6031c5dc5f3f32bea5aeae2134dec9cb";
