@@ -6,11 +6,34 @@
     flex-direction: row;
 }
 
+.heroTeamBtn {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroTeamBtn p{
+    margin: 5px 0px;
+}
+.heroTeamBtn:hover{
+    cursor: pointer;
+}
+
+.heroTeamBtn i {
+    font-size: 35px;
+    color: rgb(150, 150, 150);
+}
+
 /*Media screen*/
 @media screen and (min-width: 1400px) and (max-width: 6000px) {
     .mainSection{
         width: 1400px;
         margin: 0px auto;
+    }
+    .heroTeamBtn{
+        display: none;
     }
 }
 
@@ -19,12 +42,18 @@
         width: 1200px;
         margin: 0px auto;
     }
+    .heroTeamBtn{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .mainSection{
         width: 992px;
         margin: 0px auto;
+    }
+    .heroTeamBtn{
+        display: none;
     }
 }
 
@@ -33,12 +62,18 @@
         width: 768px;
         margin: 0px auto;
     }
+    .heroTeamBtn{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .mainSection{
         width: 576px;
         margin: 0px auto;
+    }
+    .heroTeamBtn{
+        display: none;
     }
 }
 
