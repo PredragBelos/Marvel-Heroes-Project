@@ -8,18 +8,32 @@ import './heroCards.css';
 export const HeroCards = () => {
 
     const [heroData, setHeroData] = useState([]);
+    const [filteredHeroData, setFilteredHeroData] = useState([])
 
     useEffect(() => {
         getHeroData(caracterURL).then(result => {
             setHeroData(result);
+            setFilteredHeroData(result);
         })
     }, [])
 
+    const filteredHeroProps = filteredHeroData => (setFilteredHeroData(filteredHeroData))
+
+    console.log(filteredHeroData);
+    
     return (
         <div className="heroCards">
-            <SearchBar />
+            <SearchBar 
+            filteredData={filteredHeroData}
+            setFilteredData={filteredHeroProps}
+            heroData = {heroData}
+            />
             {
-                heroData.map((hero, index) => {
+                (heroData.length === filteredHeroData.length)
+                ? heroData.map((hero, index) => {
+                    return <Card name={hero.name} image={hero.image} key={index}/>
+                })
+                : filteredHeroData.map((hero, index) => {
                     return <Card name={hero.name} image={hero.image} key={index}/>
                 })
             }
