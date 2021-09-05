@@ -1,4 +1,43 @@
 .heroCards{
-    flex-grow: 3;
     padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/*Media screen*/
+@media screen and (min-width: 1400px) and (max-width: 6000px) {
+    .heroCards{
+        width: 1000px;
+    }  
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .heroCards{
+        width: 850px;
+    }  
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .heroCards{
+        width: 700px;
+    }  
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .heroCards{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .heroCards{
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .heroCards{
+        width: 100%;
+    }
 }

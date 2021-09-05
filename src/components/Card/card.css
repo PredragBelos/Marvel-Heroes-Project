@@ -1,7 +1,10 @@
 .cardFrame {
-    width: 300px;
+    margin-bottom: 25px;
+}
+
+.card{
     border: 1px solid rgb(240, 240, 240);
-    padding-bottom: 30px;
+    padding-bottom: 30px; 
 }
 
 .heroName {
@@ -52,3 +55,155 @@
     background-color: transparent;
 }
 
+/*Media screen*/
+@media screen and (min-width: 1400px) and (max-width: 6000px) {
+    .cardFrame {
+        width: 32%;
+    }  
+    .card{
+      width: 95%; 
+      margin: 0px auto; 
+    }
+    .image {
+        width: 220px;
+        height: 320px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .cardFrame {
+        width: 32%;
+    }  
+    .card{
+      width: 90%; 
+      margin: 0px auto; 
+    }
+    .image {
+        width: 187px;
+        height: 272px;
+    }
+    .heroName {
+        
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .cardFrame {
+        width: 32%;
+    }  
+    .card{
+      width: 85%; 
+      margin: 0px auto; 
+    }
+    .image {
+        width: 130px;
+        height: 190px;
+    }
+    .heroName {
+        margin: 20px 10px;
+        font-size: 12px;
+    } 
+
+    .info {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    .add {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .cardFrame {
+        width: 50%;
+    }  
+    .card{
+      width: 90%; 
+      margin: 0px auto; 
+    }
+    .image {
+        width: 187px;
+        height: 272px;
+    }
+    .heroName {
+        margin: 10px 10px;
+        font-size: 16px;
+    } 
+
+    .info {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    .add {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .cardFrame {
+        width: 100%;
+    }  
+    .card{
+      width: 85%; 
+      margin: 0px auto 0px 0px; 
+    }
+    .image {
+        width: 187px;
+        height: 272px;
+    }
+    .heroName {
+        margin: 10px 10px;
+        font-size: 16px;
+    } 
+
+    .info {
+        width: 60px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .add {
+        width: 60px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .cardFrame {
+        width: 100%;
+    }  
+    .card{
+      width: 270px; 
+      margin: 0px auto; 
+    }
+    .image {
+        width: 187px;
+        height: 272px;
+    }
+    .heroName {
+        margin: 10px 10px;
+        font-size: 16px;
+    } 
+
+    .info {
+        width: 60px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .add {
+        width: 60px;
+        height: 30px;
+        font-size: 16px;
+    }
+}

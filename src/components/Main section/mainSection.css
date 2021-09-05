@@ -1,7 +1,52 @@
 .mainSection{
     min-height: 100vh;
     margin: 0px;
-    padding: 0px 25px;
+    padding: 0px;
     display: flex;
     flex-direction: row;
+}
+
+/*Media screen*/
+@media screen and (min-width: 1400px) and (max-width: 6000px) {
+    .mainSection{
+        width: 1400px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .mainSection{
+        width: 1200px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .mainSection{
+        width: 992px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .mainSection{
+        width: 768px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .mainSection{
+        width: 576px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .mainSection{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
 }

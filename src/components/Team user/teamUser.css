@@ -4,6 +4,7 @@
     border: 1px solid rgb(150, 150, 150);
     margin-bottom: 15px;
     display: flex;
+    align-items: center;
 }
 
 .teamUser .userImg {
@@ -39,4 +40,41 @@
 .userName p {
     font-size: 20px;
     margin: 0px 0px 0px 20px;
+}
+
+/*Media screen*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .teamUser {
+        width: 100%;
+        height: 60px;
+       
+    }
+    .teamUser .userImg {
+        width: 55px;
+        height: 60px;
+     
+    }
+    .userName {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .teamUser {
+        width: 100%;
+        height: 60px;
+       
+    }
+    .teamUser .userImg {
+        width: 55px;
+        height: 60px;
+     
+    }
+    .userName {
+        height: 60px;
+    }
+
+    .userName p {
+        font-size: 16px;
+    }
 }

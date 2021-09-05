@@ -1,23 +1,25 @@
 import React from 'react';
 import './card.css';
 
-export const Card = ({name, image}) => {
+export const Card = ({ name, image }) => {
     return (
         <div className="cardFrame">
+            <div className="card">
+                
+                <div className="heroName">
+                    <p>{name}</p>
+                </div>
 
-            <div className="heroName">
-                <p>{name}</p>
-            </div>
+                <div className="image" style={{ backgroundImage: `url(${image})` }}>
 
-            <div className="image" style={{backgroundImage: `url(${image})`}}>
-               
-            </div>
+                </div>
 
-            <div className="buttons">
-                <button className="info">Info</button>
-                <button className="add">Add</button>
+                <div className="buttons">
+                    <button className="info">Info</button>
+                    <button className="add">Add</button>
+                </div>
+
             </div>
-            
         </div>
     )
 }
