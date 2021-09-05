@@ -18,8 +18,6 @@ export const HeroCards = () => {
     }, [])
 
     const filteredHeroProps = filteredHeroData => (setFilteredHeroData(filteredHeroData))
-
-    console.log(filteredHeroData);
     
     return (
         <div className="heroCards">
