@@ -1,16 +1,16 @@
 .teamUser {
     width: 100%;
     height: 80px;
-    border: 1px solid rgb(150, 150, 150);
+    /* border: 1px solid rgb(150, 150, 150); */
     margin-bottom: 15px;
     display: flex;
     align-items: center;
 }
 
 .teamUser .userImg {
-    width: 70px;
+    width: 18%;
     height: 80px;
-    background-image: url("http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16/portrait_xlarge.jpg");
+    /* background-image: url("http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16/portrait_xlarge.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,6 +32,8 @@
 
 .userName {
     height: 80px;
+    width: 82%;
+    border: 1px solid rgb(150, 150, 150);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -56,6 +58,9 @@
     }
     .userName {
         height: 60px;
+    }
+    .userName p {
+        font-size: 16px;
     }
 }
 

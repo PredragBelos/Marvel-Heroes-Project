@@ -7,12 +7,15 @@ export const MainSection = () => {
 
     const [heroCards, setHeroCards] = useState("");
     const [myTeam, setMyTeam] = useState("");
+    const [heroes, setHeroes] = useState([]);
 
     useEffect(() => {
         setHeroCards(document.querySelector(".heroCards"));
         setMyTeam(document.querySelector(".myTeam"));
 
     }, [])
+
+    const setHeroesProps = heroes => setHeroes(heroes);
 
     const myTeamBtnClick = () => {
         if (heroCards.style.display === "none") {
@@ -31,8 +34,11 @@ export const MainSection = () => {
                 <i className="fas fa-mask teamBtn" onClick={myTeamBtnClick}></i>
                 <p>My Team</p>
             </div>
-            <HeroCards />
-            <MyTeam />
+            <HeroCards 
+            heroes={heroes}
+            setHeroes={setHeroesProps}
+            />
+            <MyTeam heroes={heroes}/>
         </div>
     );
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 import './teamUser.css';
 
-export const TeamUser = () => {
+export const TeamUser = ({hero}) => {
     return(
         <div className="teamUser">
-            <div className="userImg">
+            <div className="userImg" style={{backgroundImage:`url(${hero.image})`}}>
                 <i className="fa fa-trash icon" aria-hidden="true"></i>
             </div>
             <div className="userName">
-                <p>Hero 1</p>
+                <p>{hero.name}</p>
             </div>
         </div>
     );

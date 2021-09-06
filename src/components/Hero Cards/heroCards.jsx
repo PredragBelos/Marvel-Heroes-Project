@@ -5,7 +5,7 @@ import { Card } from '../Card/card';
 import { SearchBar } from '../Search bar/searchBar';
 import './heroCards.css';
 
-export const HeroCards = () => {
+export const HeroCards = ({heroes, setHeroes}) => {
 
     const [heroData, setHeroData] = useState([]);
     const [filteredHeroData, setFilteredHeroData] = useState([])
@@ -30,10 +30,10 @@ export const HeroCards = () => {
             {
                 (heroData.length === filteredHeroData.length)
                 ? heroData.map((hero, index) => {
-                    return <Card name={hero.name} image={hero.image} key={index}/>
+                    return <Card name={hero.name} image={hero.image} key={index} heroes={heroes} setHeroes={setHeroes}/>
                 })
                 : filteredHeroData.map((hero, index) => {
-                    return <Card name={hero.name} image={hero.image} key={index}/>
+                    return <Card name={hero.name} image={hero.image} key={index} heroes={heroes} setHeroes={setHeroes}/>
                 })
             }
         </div>
