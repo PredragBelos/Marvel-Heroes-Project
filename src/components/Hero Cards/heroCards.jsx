@@ -19,6 +19,7 @@ export const HeroCards = () => {
 
     const filteredHeroProps = filteredHeroData => (setFilteredHeroData(filteredHeroData))
     
+
     return (
         <div className="heroCards">
             <SearchBar 
