@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./singleCharacterPage.css";
 
 export const singleCharacterPage = () => {
@@ -21,7 +22,7 @@ export const singleCharacterPage = () => {
 
                 <div className="hPage">
 
-                    <p>Homepage</p>
+                    <Link to="/home"><p>Homepage</p></Link> 
 
                 </div>
 
@@ -31,7 +32,7 @@ export const singleCharacterPage = () => {
 
                 <div className="heroImage">
 
-                    <img src="https://assets1.ignimgs.com/2013/11/06/thor1106131280jpg-e9627f_1280w.jpg" alt="thor" />
+                    <img src="https://assets1.ignimgs.com/2013/11/06/thor1106131280jpg-e9627f_1280w.jpg" alt="hero" />
                 
                 </div>
 

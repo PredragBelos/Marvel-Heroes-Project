@@ -34,6 +34,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.hPage a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
 .hPage p {
     font-size: 20px;
     margin: 0px;
