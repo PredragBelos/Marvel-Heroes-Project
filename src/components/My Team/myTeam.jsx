@@ -2,7 +2,7 @@ import React from 'react';
 import { TeamUser } from '../Team user/teamUser';
 import './myTeam.css';
 
-export const MyTeam = ({heroes}) => {
+export const MyTeam = ({heroes, setHeroes}) => {
     return(
         <div className="myTeam">
 
@@ -10,7 +10,7 @@ export const MyTeam = ({heroes}) => {
            {
                (heroes.length > 0)? heroes.map((item, index) => {
                    return (
-                       <TeamUser key={index} hero={item}/>
+                       <TeamUser key={index} heroes={heroes} hero={item} setHeroes={setHeroes}/>
                    )
                }):""
 

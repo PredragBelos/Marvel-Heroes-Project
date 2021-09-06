@@ -38,7 +38,7 @@ export const MainSection = () => {
             heroes={heroes}
             setHeroes={setHeroesProps}
             />
-            <MyTeam heroes={heroes}/>
+            <MyTeam heroes={heroes} setHeroes={setHeroesProps}/>
         </div>
     );
 }
