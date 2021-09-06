@@ -1,0 +1,80 @@
+.teamUser {
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgb(150, 150, 150);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.teamUser .userImg {
+    width: 70px;
+    height: 80px;
+    background-image: url("http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16/portrait_xlarge.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.icon {
+    font-size: 60px;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0;
+    color: rgb(240, 240, 240);
+}
+
+.icon:hover {
+    display: inline-block;
+    opacity: 1;
+}
+
+.userName {
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.userName p {
+    font-size: 20px;
+    margin: 0px 0px 0px 20px;
+}
+
+/*Media screen*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .teamUser {
+        width: 100%;
+        height: 60px;
+       
+    }
+    .teamUser .userImg {
+        width: 55px;
+        height: 60px;
+     
+    }
+    .userName {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .teamUser {
+        width: 100%;
+        height: 60px;
+       
+    }
+    .teamUser .userImg {
+        width: 55px;
+        height: 60px;
+     
+    }
+    .userName {
+        height: 60px;
+    }
+
+    .userName p {
+        font-size: 16px;
+    }
+}
